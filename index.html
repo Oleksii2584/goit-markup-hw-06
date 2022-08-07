@@ -414,8 +414,28 @@
                 </li>
               </ul>
           </div>
+          <div class="footer-social-form">
+            <p class="footer-social-title">
+              Подпишитесь на рассылку</p>
+            <form class="footer-form">
+              <input 
+              type="email" 
+              name="email" 
+              placeholder="E-mail" 
+              required
+              class="footer-form-input">
+            
+              <button type="submit" class="footer-form-button hero-button">Подписаться
+                <svg width="24" height="24" class="footer-button-svg">
+                  <use href="./img/sprite.svg#airplane"></use>
+                </svg>
+
+              </button>
+            </form> 
+          </div>
       </div>
     </footer>
+    <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -423,6 +443,78 @@
             <use href="./img/sprite.svg#icon-close-button" ></use>
           </svg>
         </button>
+      <h1 class="modal-title">
+        Оставьте свои данные, мы вам перезвоним</h1>
+      <form class="modal-form">
+        <label class="modal-form-field">
+          <span class="modal-form-input-desc"> Имя</span>
+          <span class="modal-form-input-wrapper">
+            <input
+              type="text"
+              name="user_name"
+              class="modal-form-input"
+              required
+              pattern="[a-zA-Zа-яА-Я]+"
+              minlength="2"
+            />
+              <svg class="modal-form-input-icon">
+                <use href="./img/sprite.svg#human"></use>
+              </svg>
+          </span>
+        </label>
+        <label class="modal-form-field">
+          <span class="modal-form-input-desc"> Телефон</span>
+          <span class="modal-form-input-wrapper">
+            <input
+              type="tel"
+              name="user_phone"
+              class="modal-form-input"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+            />
+            <svg class="modal-form-input-icon">
+              <use href="./img/sprite.svg#telefon-modal"></use>
+            </svg>
+          </span>
+        </label>
+        <label class="modal-form-field">
+          <span class="modal-form-input-desc"> Почта </span>
+          <span class="modal-form-input-wrapper">
+            <input
+              type="email"
+              name="user_mail"
+              class="modal-form-input"
+              required
+              
+            />
+            <svg class="modal-form-input-icon">
+              <use href="./img/sprite.svg#envelope"></use>
+            </svg>
+          </span>
+        </label>
+        <label class="modal-form-field">
+          <span class="modal-form-input-desc">Комментарий</span>
+          <textarea
+            name="user_message"
+            class="modal-form-message"
+            placeholder="Введите текст"
+          ></textarea>
+        </label>
+        <input
+          id="user-policy"
+          type="checkbox"
+          name="user_policy"
+          class="modal-form-check visually-hidden"
+        />
+        <label for="user-policy" 
+        class="modal-form-check-desc">
+          Соглашаюсь с рассылкой и принимаю&nbsp;
+          <a href="">Условия договора </a>
+        </label>
+        <button type="submit" class="modal-form-submit">
+          Отправить</button>
+      </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
