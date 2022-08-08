@@ -396,11 +396,11 @@ fill: var(--main-color);
   padding: 60px 0;
 }
 .footer-address-svg{
-display: flex;}
+display: flex;
+justify-content: space-between;}
 .footer-block-address{
   display: flex;
   flex-direction: column;
-  margin-right: 70px;
  }
 
 .logo-footer{color: var(--main-color);
@@ -440,7 +440,7 @@ margin-bottom: 9px;}
   }
   .footer-social{
   padding-top: 12px;
-  margin-right: 93px;}
+  }
 
   .footer-social-title{
     font-family: 'Roboto';
@@ -596,7 +596,6 @@ fill: var(--main-color);
 .modal-form-input-wrapper {
   display: block;
   position: relative;
-  margin-bottom: 10px;
 }
 
 .modal-form-input {
@@ -619,8 +618,6 @@ fill: var(--main-color);
   left: 12px;
   transform: translateY(-50%);
   display: block;
-  width: 18px;
-  height: 18px;
   transition: feel var(--transition);
 }
 
